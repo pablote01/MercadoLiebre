@@ -14,3 +14,7 @@ app.listen(port, () => (console.log('Nuestra App corre en http://localhost:'+por
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views','home.html'))
   });
+
+  app.get('/index', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/index.html'))
+  });
